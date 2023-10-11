@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link  rel="shortcut icon" type="image/png" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQBAMAAADt3eJSAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAwUExURdQ4tddJu9lTv9tbwd1mxeF3y+OH0eaV1uun3fC+5u604vLH6fXV7vbc8frq9v/+/8joJMoAAAAJcEhZcwAADsMAAA7DAcdvqGQAAACJSURBVBjTY/gPBO+AGMTYzMB6H8T4xcDAwAliPGCau4jhPMP/Pz/9/v8zsGf4v6D+/9v/B3gZ/jDY/1M8/4Gb4SvT+0cM+4GMD1z/FLj/J/AzfOD87zD/O0M9wyf2/2/+/2b7z/Cd4fz/7/nn/zP8U5C4m8AFsusi0IZ8EONfIYME1HagK/7/BwDSpVRv3GRZqQAAAABJRU5ErkJggg==" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mobile Template</title>
+    <!-- 在这里添加你的 CSS 样式表 -->
+    <style>
+      .demo{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      h1,h2{
+        color: #f57cd1;
+      }
+      /* CSS 样式 */
+      .button {
+        display: inline-block;
+        padding: 10px 20px;
+        font-size: 16px;
+        font-weight: bold;
+        text-align: center;
+        text-decoration: none;
+        background-color: #f57cd1;
+        color: white;
+        border: none;
+        cursor: pointer;
+        border-radius: 4px;
+        transition: background-color 0.3s;
+      }
+      .button.clicked{
+        color: #f57cd1;
+        background-color: white;
+        border:solid 1px #f57cd1;
+
+      }
+    </style>
+  </head>
+  <body>
+    <!-- 在这里编写你的页面内容 -->
+    <div class="demo">
+      <h2>Hello, world!</h2><h1 style="display: none;"></h1>
+      <button class="button">click me</button>
+    </div>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
