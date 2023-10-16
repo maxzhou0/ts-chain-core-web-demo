@@ -78,6 +78,11 @@ class Example {
       console.log(a + b);
     };
   }
+  addOneV2(a:number){
+    return (b:number)=>{
+      return a+b;
+    }
+  }
   addEnd(a: number, b: number) {
     return a + b;
   }
@@ -94,5 +99,7 @@ new Example()
     //10
     7
   ) //11
+  .addOneV2(3)(4)
   .addEnd(11, 10); //chain ended here
+  
 // .add(42,1)  //❌error, chain function break
